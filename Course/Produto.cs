@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 
 namespace Course
 {
@@ -11,6 +11,14 @@ namespace Course
         public double ValorTotalEmEstoque()
         {
             return Preco * Quantidade;
+        }
+        public void AdicionarProdutos(int quantidade)
+        {
+            Quantidade += quantidade;
+        }
+        public void RemoverProdutos(int quantidade)
+        {
+            Quantidade -= quantidade;
         }
         public override String ToString()
         {
@@ -26,3 +34,6 @@ namespace Course
         }
     }
 }
+
+
+        
